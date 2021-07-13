@@ -1,0 +1,7 @@
+.sp-none {
+  display: none;
+
+  @include breakpoint( pc ) {
+    display: block;
+  }
+}

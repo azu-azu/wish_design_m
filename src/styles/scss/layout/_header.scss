@@ -1,0 +1,19 @@
+.l-header {
+	position: fixed;
+	width: 100%;
+	z-index: 1000;
+	align-items: center;
+
+	@include breakpoint( pc ) {
+		padding-top: pxtovw-pc(50);
+		align-items: unset;
+	}
+}
+
+
+// 404ページではfixedをはずさないとおかしくなる
+.error404 {
+	.l-header {
+		position: static;
+	}
+}
